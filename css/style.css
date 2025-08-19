@@ -36,6 +36,14 @@ img {
   --color_white: #ffffff;
   --color_mirage: #1e2a3e;
   --color_violet: #8a38f5;
+  --color_zircon: #eff5ff;
+  --color_ribbon: #005fff;
+}
+
+.container {
+  max-width: 1666px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .list-reset {
@@ -62,6 +70,16 @@ img {
   font-weight: 600;
 }
 
+.btn-zircon {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color_ribbon);
+  padding: 1.5rem 2.4rem;
+  background-color: var(--color_zircon);
+  border-radius: 1rem;
+}
+
 .bg-fix {
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,6 +87,15 @@ img {
 
 .proxima {
   font-family: "Proxima", sans-serif;
+}
+
+.leading-normal {
+  line-height: normal;
+}
+
+.f15w500 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .f18w600 {
@@ -97,6 +124,15 @@ img {
     url("../fonts/Inter-Regular.woff2") format("woff2"),
     url("../fonts/Inter-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Medium"), local("Inter-Medium"),
+    url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -152,4 +188,46 @@ img {
     url("../fonts/ProximaNova-Extrabld.woff") format("woff");
   font-weight: 800;
   font-style: normal;
+}
+
+/* header */
+.page__header {
+  padding: 1.2rem 11rem;
+  display: flex;
+  align-items: center;
+}
+
+.page__navigation-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page__logo-link {
+  color: transparent;
+  background-image: url("../img/logo-black.svg");
+  width: 104px;
+  height: 30px;
+  display: inline-block;
+}
+
+.page__navigation-service {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 0.8rem;
+}
+
+.page__header-log {
+  margin-left: auto;
+}
+
+.page__log-in {
+  margin-right: 2.4rem;
+}
+
+.page__header-logo {
+  margin-right: 66px;
+}
+
+.page__navigation-item:not(:last-child) {
+  margin-right: 32px;
 }
