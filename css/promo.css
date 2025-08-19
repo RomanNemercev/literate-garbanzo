@@ -1,0 +1,37 @@
+/* promo */
+
+.page__promo {
+  background-image: url("../img/percents.png");
+  background-color: var(--color_violet);
+  overflow: hidden;
+}
+
+.page__promo-content {
+  position: relative;
+  display: flex;
+  column-gap: 24px;
+  max-width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+  padding: 1.5rem 2.4rem;
+  background-color: var(--color_violet);
+}
+
+.page__promo-content::before {
+  content: "";
+  position: absolute;
+  left: -25rem;
+  width: 25rem;
+  height: 100%;
+  background: linear-gradient(90deg, #8a38f5 0%, rgba(138, 56, 245, 0) 100%);
+  transform: rotate(-180deg);
+}
+
+.page__promo-content::after {
+  content: "";
+  position: absolute;
+  right: -25rem;
+  width: 25rem;
+  height: 100%;
+  background: linear-gradient(90deg, #8a38f5 0%, rgba(138, 56, 245, 0) 100%);
+}

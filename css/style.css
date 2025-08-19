@@ -1,0 +1,155 @@
+/* default */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color_mirage);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --color_white: #ffffff;
+  --color_mirage: #1e2a3e;
+  --color_violet: #8a38f5;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn {
+  font-family: "Proxima", sans-serif;
+  background-color: var(--color_white);
+  border-radius: 0.8rem;
+  padding: 0.638rem 1.6rem;
+  color: var(--color_mirage);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bg-fix {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.proxima {
+  font-family: "Proxima", sans-serif;
+}
+
+.f18w600 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.c-white {
+  color: var(--color_white);
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Light"), local("Inter-Light"),
+    url("../fonts/Inter-LightBETA.woff2") format("woff2"),
+    url("../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), local("Inter-Regular"),
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter SemiBold"), local("Inter-SemiBold"),
+    url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Bold"), local("Inter-Bold"),
+    url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima";
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima";
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"),
+    url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima";
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
+    url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima";
+  src: local("Proxima Nova ExtraBold"), local("ProximaNova-ExtraBold"),
+    url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
