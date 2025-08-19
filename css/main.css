@@ -1,0 +1,138 @@
+.page__quick-platforms {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.page__platforms-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  padding: 11px;
+  backdrop-filter: blur(4.419127464294434px);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.hh {
+  background-color: rgba(255, 98, 92, 0.2);
+  background-image: url("../img/logo-hh.svg");
+}
+
+.youla {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 59, 242, 0.2) 0%,
+    rgba(0, 255, 254, 0.2) 100%
+  );
+}
+
+.youla::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  background-image: url("../img/logo-youla.svg");
+}
+
+.zarplata {
+  background-image: url("../img/logo-zarplata.svg");
+  background-color: rgba(255, 180, 0, 0.2);
+}
+
+.avito {
+  background-image: url("../img/logo-avito.svg");
+  background-color: rgba(151, 207, 38, 0.2);
+}
+
+.rabota {
+  background-color: rgba(82, 123, 218, 0.2);
+  background-image: url("../img/logo-rabota.svg");
+}
+
+.superjob {
+  background-color: rgba(0, 175, 143, 0.2);
+  background-image: url("../img/logo-superjob.svg");
+}
+
+.vk {
+  background-color: rgba(0, 119, 255, 0.2);
+  background-image: url("../img/logo-vk.svg");
+}
+
+.careerist {
+  background-color: rgba(237, 117, 24, 0.2);
+  background-image: url("../img/logo-careerist.svg");
+}
+
+.tg {
+  background-color: rgba(55, 187, 254, 0.2);
+  background-image: url("../img/logo-tg.svg");
+  z-index: 1;
+}
+
+.other {
+  background-color: var(--color_zircon);
+  background-image: url("../img/logo-other.svg");
+}
+
+.page__platforms-item:not(:first-child) {
+  margin-left: -9px;
+}
+
+.page__descr-price {
+  text-decoration: underline;
+}
+
+.page__quick-decor {
+  width: 700px;
+  height: 643px;
+  background-image: url("../img/quick-decor.png");
+  background-repeat: no-repeat;
+}
+
+.page__quick-wrapper {
+  position: relative;
+  max-width: 1324px;
+  padding: 0 5rem;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.page__quick-decor {
+  position: absolute;
+  top: 30px;
+  right: -60px;
+}
+
+.page__quick {
+  background-image: url("../img/main-first-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__quick-content {
+  max-width: 574px;
+  width: 100%;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.page__quick-title {
+  margin-bottom: 24px;
+}
+
+.page__quick-descr {
+  margin-bottom: 57px;
+}
+
+.page__quick-move {
+  margin-bottom: 20px;
+}
+
+.page__quick-descr__second {
+  width: fit-content;
+  padding-left: 15px;
+}

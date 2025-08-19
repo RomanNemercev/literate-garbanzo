@@ -13,6 +13,10 @@ html {
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: var(--color_mirage);
@@ -38,6 +42,7 @@ img {
   --color_violet: #8a38f5;
   --color_zircon: #eff5ff;
   --color_ribbon: #005fff;
+  --color_shuttle: #616b7c;
 }
 
 .container {
@@ -80,6 +85,17 @@ img {
   border-radius: 1rem;
 }
 
+.btn-ribbon {
+  background-color: var(--color_ribbon);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color_white);
+  letter-spacing: 0.01em;
+  border-radius: 1.2rem;
+  padding: 1.8rem 4.8rem;
+  line-height: normal;
+}
+
 .bg-fix {
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,9 +109,27 @@ img {
   line-height: normal;
 }
 
+.leading-120 {
+  line-height: 120%;
+}
+
+.leading-130 {
+  line-height: 130%;
+}
+
+.f12w400 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 .f15w500 {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.f18w400 {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .f18w600 {
@@ -103,8 +137,21 @@ img {
   font-weight: 600;
 }
 
-.c-white {
+.f50w700 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.white {
   color: var(--color_white);
+}
+
+.shuttle {
+  color: var(--color_shuttle);
+}
+
+.ribbon {
+  color: var(--color_ribbon);
 }
 
 /* fonts */
