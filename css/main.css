@@ -276,3 +276,84 @@
   text-align: center;
   width: max-content;
 }
+
+/* map */
+.page__map-wrapper {
+  max-width: 1336px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+  padding-top: 198px;
+}
+
+.page__map-publish {
+  position: relative;
+  margin-bottom: 320px;
+}
+
+.page__map-responses {
+  position: relative;
+  margin-bottom: 377px;
+}
+
+.page__map-communication {
+  position: relative;
+}
+
+.page__publish-content {
+  max-width: 580px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.page__publish-title {
+  margin-bottom: 16px;
+}
+
+.page__publish-descr {
+  margin-bottom: 46px;
+}
+
+.page__publish-img {
+  position: absolute;
+  top: -166px;
+  left: -85px;
+}
+
+.page__responses-content {
+  max-width: 540px;
+  width: 100%;
+  padding-left: 77px;
+}
+
+.page__responses-title {
+  margin-bottom: 16px;
+}
+
+.page__responses-img {
+  position: absolute;
+  right: -42px;
+  top: -195px;
+}
+
+.page__communication-content {
+  max-width: 581px;
+  margin-left: auto;
+  padding-right: 8px;
+}
+
+.page__comminication-img {
+  position: absolute;
+  top: -229px;
+  left: -46px;
+}
+
+.page__communication-title {
+  margin-bottom: 16px;
+}
+
+.page__communication-img {
+  position: absolute;
+  top: -229px;
+  left: -46px;
+}
