@@ -75,8 +75,27 @@
                     <div class="page__quick-decor"></div>
                 </div>
             </section>
+            <section class="page__video">
+                <div class="page__video-wrapper">
+                    <p class="page__video-title f50w700 white proxima">Система в действии — за пару&nbsp;&nbsp;минут</p>
+                    <!-- Блок с gif и кнопкой play -->
+                    <div class="video-promo" id="videoPromo">
+                        <button class="video-play-btn" id="videoPlayBtn" aria-label="Смотреть презентацию"></button>
+                    </div>
+                    <!-- Кастомный видеоплеер -->
+                    <div class="video-modal" id="videoModal">
+                        <button class="video-close-btn" id="videoCloseBtn" aria-label="Закрыть видео"></button>
+                        <video id="promoVideo" controls preload="metadata">
+                            <source src="video/video.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <section style="min-height: 200px;"></section>
         </main>
     </div>
+    <script src="js/video-presenter.js"></script>
 </body>
 
 </html>
