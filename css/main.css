@@ -121,9 +121,11 @@
 }
 
 .page__quick {
-  /* background-image: url("../img/main-first-bg.png");
+  background-image: url("../img/main-first-bg.png");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .page__quick-content {
@@ -284,6 +286,7 @@
   margin: 0 auto;
   padding: 0 50px;
   padding-top: 198px;
+  margin-bottom: 319px;
 }
 
 .page__map-publish {
@@ -356,4 +359,238 @@
   position: absolute;
   top: -229px;
   left: -46px;
+}
+
+/* tools */
+.page__tools {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 180px;
+}
+
+.page__tools-wrapper {
+  max-width: 1416px;
+  width: 100%;
+  background-color: var(--color_white);
+  /* background-color: gray; */
+  border-radius: 35px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.page__tools-ai {
+  overflow: hidden;
+  border-radius: 35px;
+  padding: 4.8rem;
+  position: relative;
+  background: linear-gradient(179deg, #053bf2 0%, #000 100%);
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 20px;
+}
+
+.page__tools-ai::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/ai-bot.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 696px;
+}
+
+.page__comments,
+.page__actions,
+.page__storage,
+.page__research {
+  position: relative;
+  border-radius: 35px;
+  background-color: var(--color_aqua);
+  padding: 40px;
+  padding-top: 151px;
+  min-height: 340px;
+}
+
+.page__tools-top {
+  display: grid;
+  grid-template-columns: minmax(0, 501px) 1fr;
+  column-gap: 16px;
+  margin-bottom: 16px;
+}
+
+.page__ai-title,
+.page__ai-descr {
+  z-index: 1;
+}
+
+.page__tools-operations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.page__operations-first,
+.page__operations-second {
+  display: grid;
+  row-gap: 16px;
+}
+
+.page__comments::before {
+  content: "";
+  position: absolute;
+  width: 126px;
+  height: 101px;
+  top: 26px;
+  left: 14px;
+  background-image: url("../img/comments.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__actions::before {
+  content: "";
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  top: 28px;
+  left: 30px;
+  background-image: url("../img/actions.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__storage::before {
+  content: "";
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  top: 10px;
+  left: 12px;
+  background-image: url("../img/storage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__research::before {
+  content: "";
+  position: absolute;
+  width: 101px;
+  height: 91px;
+  top: 29px;
+  left: 34px;
+  background-image: url("../img/research.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__tools-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+
+.page__advantage-chat {
+  position: relative;
+  margin-bottom: 16px;
+  background-color: var(--color_aqua);
+  padding: 40px;
+  padding-top: 151px;
+  border-radius: 35px;
+}
+
+.page__advantage-search {
+  position: relative;
+  background-color: var(--color_chalk);
+  padding: 40px;
+  padding-top: 151px;
+  border-radius: 35px;
+}
+
+.page__api {
+  position: relative;
+  background: linear-gradient(180deg, #8a38f5 0%, #000 100%);
+  border-radius: 35px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 48px;
+  row-gap: 18px;
+}
+
+.page__api::before {
+  content: "";
+  position: absolute;
+  width: 644px;
+  height: 234px;
+  background-image: url("../img/cloudy-second.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 16px;
+}
+
+.page__api::after {
+  content: "";
+  position: absolute;
+  width: 660px;
+  height: 353px;
+  background-image: url("../img/cloudy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+.page__advantage-chat::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 134px;
+  height: 134px;
+  background-image: url("../img/hands.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__advantage-search::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 37px;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 105px;
+  height: 106px;
+}
+
+.page__tools-text {
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.page__tools-pre {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.page__comments-title,
+.page__actions-title,
+.page__storage-title,
+.page__research-title {
+  margin-bottom: 14px;
+}
+
+.page__chat-title {
+  margin-bottom: 15px;
+}
+
+.page__search-title {
+  margin-bottom: 15px;
 }
