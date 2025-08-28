@@ -115,7 +115,7 @@ img {
 
 .bg-fix {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .proxima {
@@ -202,6 +202,11 @@ img {
 .f28w500 {
   font-size: 2.8rem;
   font-weight: 500;
+}
+
+.f30w400 {
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .f30w600 {
