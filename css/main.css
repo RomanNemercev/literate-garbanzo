@@ -47,6 +47,7 @@
   width: 29px;
   height: 29px;
   background-image: url("../img/logo-youla.svg");
+  background-repeat: no-repeat;
 }
 
 .zarplata {
@@ -593,4 +594,360 @@
 
 .page__search-title {
   margin-bottom: 15px;
+}
+
+/* rates */
+.page__rates {
+  padding: 0 50px;
+  padding-bottom: 100px;
+}
+
+.page__rates-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 98px;
+}
+
+.page__rates-pre {
+  margin-bottom: 8px;
+}
+
+.page__rates-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  max-width: 1224px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.page__rates-min,
+.page__rates-mid,
+.page__rates-max {
+  background-color: var(--color_white);
+  border-radius: 35px;
+  height: fit-content;
+}
+
+.page__min-header,
+.page__mid-header,
+.page__max-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--color_wild-sand);
+}
+
+.page__min-title,
+.page__mid-title,
+.page__max-title {
+  margin-bottom: 7px;
+}
+
+.page__min-main,
+.page__mid-main,
+.page__max-main {
+  min-height: 455px;
+  border-bottom: 1px solid var(--color_wild-sand);
+}
+
+.page__min-sale,
+.page__mid-sale,
+.page__max-sale {
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--color_wild-sand);
+}
+
+.page__min-total,
+.page__mid-total,
+.page__max-total {
+  padding: 20px 32px;
+  padding-bottom: 24px;
+}
+
+.page__web-include {
+  padding: 30px;
+  padding-left: 33px;
+  padding-bottom: 4px;
+}
+
+.page__include-title {
+  margin-bottom: 25px;
+}
+
+.page__include-item.page__platforms-item {
+  width: 38px;
+  height: 38px;
+}
+
+.page__include-item.page__platforms-item:not(:first-child) {
+  margin-left: -6.5px;
+}
+
+.page__include-item.hh {
+  background-image: url("../img/hh-22.svg");
+}
+
+.page__include-item.rabota {
+  background-image: url("../img/rabota-22.svg");
+}
+
+.page__include-item.zarplata {
+  background-image: url("../img/zarplata-22.svg");
+}
+
+.page__include-item.careerist {
+  background-image: url("../img/careerist-22.svg");
+}
+
+.page__include-item.youla::after {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/youla-22.svg");
+  top: 7px;
+  left: 10px;
+}
+
+.page__include-item.superjob {
+  background-image: url("../img/superjob-22.svg");
+}
+
+.page__include-item.vk {
+  background-image: url("../img/vk-22.svg");
+}
+
+.page__include-item.avito {
+  background-image: url("../img/avito-22.svg");
+}
+
+.page__include-list {
+  display: flex;
+}
+
+.page__update {
+  padding: 27px 32px;
+}
+
+.page__update-title {
+  margin-bottom: 16px;
+}
+
+.page__update-item {
+  display: flex;
+  column-gap: 8px;
+}
+
+.page__update-item:not(:last-child) {
+  margin-bottom: 6.5px;
+}
+
+.page__update-check {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__more {
+  padding: 4px 33px;
+}
+
+.page__more-wrapper {
+  display: flex;
+  column-gap: 15px;
+}
+
+.page__mid-main .page__more-wrapper {
+  column-gap: 8px;
+}
+
+.page__more-title {
+  margin-bottom: 15px;
+}
+
+.page__more-decor {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/user-icon.png");
+}
+
+.page__more-descr {
+  line-height: 130%;
+  padding-right: 60px;
+}
+
+.page__sale-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__sale-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+  width: 50px;
+  height: 24px;
+  background-color: var(--color_wild-sand);
+  border-radius: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.page__toggle-trigger {
+  width: 18px;
+  height: 18px;
+  background-color: var(--color_shuttle);
+  border-radius: 50%;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  transition-property: transform, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.page__sale-toggle.active {
+  background-color: var(--color_zircon);
+}
+
+.page__sale-toggle.active .page__toggle-trigger {
+  background-color: var(--color_ribbon);
+  transform: translateX(24px);
+}
+
+.page__total-descr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page__total-price {
+  display: flex;
+}
+
+.page__price-cur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1px;
+}
+
+.page__price-item {
+  margin-right: 16px;
+}
+
+.page__cur-divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color_mirage);
+  opacity: 0.56;
+}
+
+.page__total-accept {
+  display: block;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.page__total-more {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.page__table-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15.5px 10px;
+  line-height: normal;
+  margin-bottom: 3px;
+}
+
+.page__sale-table {
+  margin-top: 0;
+  max-height: 0;
+  height: 100%;
+  overflow: hidden;
+  transition-property: max-height, margin-top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.page__sale-table.active {
+  margin-top: 34px;
+  max-height: 465px;
+}
+
+.page__btn-sale {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 11.5px 16px;
+  line-height: normal;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.page__btn-sale:hover {
+  background-color: var(--color_wild-sand);
+}
+
+.page__rates-personal {
+  max-width: 1224px;
+  margin: 0 auto;
+  background-color: var(--color_white);
+  border-radius: 35px;
+  padding: 48px;
+  background-image: url("../img/calc.png");
+  background-size: contain;
+  background-position: 98%;
+}
+
+.page__personal-title {
+  margin-bottom: 16px;
+}
+
+.page__personal-descr {
+  max-width: 44%;
+  margin-bottom: 34px;
+}
+
+.page__rates-mid {
+  position: relative;
+}
+
+.page__rates-mid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 5px solid rgba(0, 95, 255, 0.5);
+  border-radius: 35px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.page__rates-mid::after {
+  content: "Выбор клиентов";
+  position: absolute;
+  top: -43px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 16px 16px 0 0;
+  background-color: var(--color_caribbean);
+  box-shadow: 0 0 25px 0 rgba(0, 104, 67, 0.25);
+  color: var(--color_white);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 9.5px 16px;
+  z-index: 1;
 }

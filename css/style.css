@@ -40,12 +40,15 @@ img {
 :root {
   --color_white: #ffffff;
   --color_mirage: #1e2a3e;
+  --color_mirage-second: #1a222c;
   --color_violet: #8a38f5;
   --color_zircon: #eff5ff;
   --color_ribbon: #005fff;
   --color_shuttle: #616b7c;
   --color_aqua: #eef2f5;
   --color_chalk: #f3ebfe;
+  --color_caribbean: #00cc84;
+  --color_wild-sand: #f6f6f6;
 }
 
 .container {
@@ -131,8 +134,33 @@ img {
   line-height: 130%;
 }
 
+.f11w300 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 .f12w400 {
   font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.f13w400 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.f14w400 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.f14w500 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.f15w400 {
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -166,13 +194,33 @@ img {
   font-weight: 600;
 }
 
+.f25w500 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.f28w500 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
 .f30w600 {
   font-size: 3rem;
   font-weight: 600;
 }
 
+.f35w600 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
 .f50w700 {
   font-size: 5rem;
+  font-weight: 700;
+}
+
+.f60w700 {
+  font-size: 6rem;
   font-weight: 700;
 }
 
@@ -190,6 +238,15 @@ img {
 
 .zircon {
   color: var(--color_zircon);
+}
+
+.mirage-second {
+  color: var(--color_mirage-second);
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* fonts */
@@ -276,9 +333,6 @@ img {
 }
 
 /* header */
-.page__header {
-}
-
 .page__header-wrapper {
   padding: 1.2rem 11rem;
   display: flex;
