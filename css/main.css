@@ -970,6 +970,7 @@
 
 .page__trust-text {
   text-align: center;
+  margin-bottom: 55px;
 }
 
 .page__trust-content {
@@ -1017,10 +1018,6 @@
   margin-bottom: 10px;
 }
 
-.page__trust-title {
-  margin-bottom: 55px;
-}
-
 .page__guarantees-title {
   margin-bottom: 15px;
 }
@@ -1050,6 +1047,7 @@
 /* slider cases */
 .page__cases {
   padding: 0 50px;
+  margin-bottom: 264px;
 }
 
 .page__cases-slider {
@@ -1058,15 +1056,12 @@
 
 .page__cases-text {
   text-align: center;
+  margin-bottom: 47px;
 }
 
 .page__cases-pre {
   margin-bottom: 10px;
   display: inline-block;
-}
-
-.page__cases-title {
-  margin-bottom: 47px;
 }
 
 .page__cases-wrapper {
@@ -1339,4 +1334,39 @@
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
   background-image: url("../img/swiper-arrow-hover.svg");
   background-color: var(--color_mirage);
+}
+
+/* partners */
+.page__partners {
+  padding: 0 50px;
+}
+
+.page__partners-wrapper {
+  max-width: 1416px;
+  margin: 0 auto;
+}
+
+.page__partners-text {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.page__partners-pre {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.page__partners-list {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.page__partners-item {
+  background-color: var(--color_white);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
 }
