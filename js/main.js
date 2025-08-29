@@ -22,3 +22,20 @@ triggerMax.onclick = function () {
   this.classList.toggle("active");
   contentMax.classList.toggle("active");
 };
+
+// swiper
+var swiper = new Swiper(".page__slider-wrapper", {
+  spaceBetween: 30,
+  cssMode: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  mousewheel: true,
+  keyboard: true,
+});

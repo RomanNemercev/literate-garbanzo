@@ -86,7 +86,8 @@ img {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--color_ribbon);
-  padding: 1.5rem 2.4rem;
+  line-height: normal;
+  padding: 1.45rem 2.4rem;
   background-color: var(--color_zircon);
   border-radius: 1rem;
 }
@@ -174,6 +175,11 @@ img {
   font-weight: 400;
 }
 
+.f16w700 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 .f17w400 {
   font-size: 1.7rem;
   font-weight: 400;
@@ -209,9 +215,19 @@ img {
   font-weight: 400;
 }
 
+.f30w500 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 .f30w600 {
   font-size: 3rem;
   font-weight: 600;
+}
+
+.f35w400 {
+  font-size: 3.5rem;
+  font-weight: 400;
 }
 
 .f35w600 {
