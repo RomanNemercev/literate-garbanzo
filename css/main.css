@@ -1339,6 +1339,7 @@
 /* partners */
 .page__partners {
   padding: 0 50px;
+  margin-bottom: 214px;
 }
 
 .page__partners-wrapper {
@@ -1369,4 +1370,98 @@
   justify-content: center;
   align-items: center;
   min-height: 120px;
+}
+
+/* faq */
+.page__faq {
+  padding: 0 50px;
+  margin-bottom: 180px;
+}
+
+.page__faq-wrapper {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.page__faq-text {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.ac {
+  border: none;
+  border-radius: 24px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ac .ac-trigger {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Proxima", sans-serif;
+  padding: 30.5px 36px;
+  transition: color 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+.ac:hover {
+  background-color: var(--color_mirage);
+}
+
+.ac:hover.is-active {
+  background-color: var(--color_white);
+}
+
+.ac-trigger:hover {
+  color: var(--color_white);
+}
+
+.ac.is-active .ac-trigger:hover {
+  color: var(--color_mirage);
+}
+
+.ac .ac-trigger:focus {
+  color: var(--color_mirage);
+}
+
+.ac:hover .ac-trigger:focus {
+  color: var(--color_white);
+}
+
+.ac.is-active .ac-trigger:focus {
+  color: var(--color_mirage);
+}
+
+.ac .ac-trigger::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  right: 36px;
+  top: 28%;
+  background-image: url("../img/accordion-plus.png");
+  transform: rotate(0);
+  transform-origin: center;
+  transition: background-image 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: "";
+  background-image: url("../img/accordion-cross.png");
+  transform: rotate(90deg);
+}
+
+.ac-trigger:focus-visible {
+  outline: none;
+}
+
+.ac .ac-panel .ac-text {
+  padding: 0 36px 24px 36px;
+  font-family: "Proxima", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color_shuttle);
+  max-width: 430px;
+}
+
+.ac.is-active .ac-trigger {
+  padding-bottom: 8px;
 }

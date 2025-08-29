@@ -39,3 +39,6 @@ var swiper = new Swiper(".page__slider-wrapper", {
   mousewheel: true,
   keyboard: true,
 });
+
+// accordion
+new Accordion(".accordion-container");
