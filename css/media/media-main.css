@@ -1,0 +1,156 @@
+@media (max-width: 1200px) {
+  /* quick */
+  .page__quick-wrapper {
+    overflow: visible;
+    min-height: 990px;
+  }
+
+  .page__quick-content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+
+  .page__quick-title {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .page__quick-decor {
+    background-size: contain;
+    top: auto;
+    bottom: -80px;
+    right: calc(100% - 90vw);
+    background-image: url("../../img/quick-decor-768.png");
+  }
+
+  .page__quick-platforms {
+    justify-content: center;
+  }
+
+  .page__quick-descr {
+    width: 100%;
+  }
+
+  .page__quick-descr__second {
+    width: 100%;
+  }
+
+  /* map */
+  .page__publish-img {
+    left: -22px;
+    top: -21px;
+    width: 332px;
+    height: 332px;
+  }
+
+  .page__map-wrapper {
+    padding-top: 100px;
+  }
+
+  .page__publish-content {
+    max-width: 500px;
+  }
+
+  .page__responses-img {
+    width: 332px;
+    height: 332px;
+    top: -20px;
+    right: -20px;
+  }
+
+  .page__communication-img {
+    width: 332px;
+    height: 332px;
+    top: -20px;
+    left: -20px;
+  }
+
+  .page__map-publish {
+    margin-bottom: 200px;
+  }
+
+  .page__map-responses {
+    margin-bottom: 290px;
+  }
+
+  .page__responses-content {
+    padding-left: 0;
+    max-width: 500px;
+  }
+
+  .page__communication-content {
+    max-width: 500px;
+  }
+
+  /* tools */
+  .page__tools-ai::after {
+    background-image: url("../../img/ai-bot-768.png");
+  }
+
+  .page__tools-top {
+    grid-template-areas:
+      "a d"
+      "a c"
+      "e b";
+  }
+
+  /* rates */
+  .page__rates-personal {
+    background-position: 115%;
+  }
+
+  /* trust */
+  .page__content-guarantees,
+  .page__content-it {
+    padding: 24px;
+    padding-top: 131px;
+  }
+
+  .page__guarantees-title,
+  .page__it-title {
+    font-size: 2.4rem;
+  }
+
+  .page__guarantees-item {
+    column-gap: 8px;
+  }
+
+  /* cases */
+  .gazelkin__brief,
+  .art__brief,
+  .itc__brief {
+    padding: 30px;
+  }
+
+  .gazelkin__btn-more,
+  .art__btn-more,
+  .itc__btn-more {
+    margin-right: 0;
+  }
+
+  .gazelkin__btn-wrapper,
+  .art__btn-wrapper,
+  .itc__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gazelkin__btn-wrapper {
+    margin-top: 133px;
+  }
+
+  .art__btn-wrapper {
+    margin-top: 129px;
+  }
+
+  .itc__btn-wrapper {
+    margin-top: 56px;
+  }
+
+  /* partners */
+  .page__partners-item {
+    padding: 10px;
+  }
+}

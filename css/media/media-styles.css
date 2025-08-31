@@ -1,0 +1,30 @@
+@media (max-width: 1200px) {
+  /* header */
+  .page__promo {
+    background-image: none;
+  }
+
+  .page__promo-content::before,
+  .page__promo-content::after {
+    display: none;
+  }
+
+  .page__promo-title {
+    font-size: 2rem;
+  }
+
+  /* CTA */
+  .page__cta-wrapper::after {
+    right: 0;
+    width: 330px;
+    height: 330px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 35px;
+  }
+
+  /* footer */
+  .page__footer-b {
+    margin-top: -20px;
+  }
+}

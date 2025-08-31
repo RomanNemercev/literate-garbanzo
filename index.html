@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/libs/accordion.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/promo.css  ">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media/media-styles.css">
+    <link rel="stylesheet" href="css/media/media-main.css">
 </head>
 
 <body>
@@ -101,6 +103,7 @@
                 <div class="page__map-wrapper">
                     <div class="page__map-publish">
                         <picture class="page__publish-img">
+                            <source srcset="img/article-1-768.png" media="(max-width: 1200px)">
                             <img src="img/article-1.png" alt="Пример вакансии">
                         </picture>
                         <div class="page__publish-content">
@@ -127,12 +130,14 @@
                                 массовых действий, тегов, меток и&nbsp;комментариев внутри карточек.</p>
                         </div>
                         <picture class="page__responses-img">
+                            <source srcset="img/article-2-768.png" media="(max-width: 1200px)">
                             <img src="img/article-2.png" alt="Работа с откликами">
                         </picture>
                     </div>
                     <div class="page__map-communication">
-                        <picture class="page__communication-img"><img src="img/article-3.png"
-                              alt="Общение с кандидатами">
+                        <picture class="page__communication-img">
+                            <source srcset="img/article-3-768.png" media="(max-width: 1200px)">
+                            <img src="img/article-3.png" alt="Общение с кандидатами">
                         </picture>
                         <div class="page__communication-content">
                             <h2 class="page__communication-title f50w700 proxima leading-120">Общайтесь
@@ -162,40 +167,38 @@
                                 кандидатов,
                                 составляет эффективный текст вакансии </p>
                         </div>
-                        <div class="page__tools-operations">
-                            <div class="page__comments">
-                                <h4 class="page__comments-title f24w600 leading-120 proxima">Комментарии и метки
-                                </h4>
-                                <p class="page__comments-descr f17w400 leading-120 proxima shuttle">Оставляй
-                                    заметки,
-                                    добавляй теги
-                                    и&nbsp;отслеживай
-                                    статус
-                                    каждого кандидата.</p>
-                            </div>
-                            <div class="page__actions">
-                                <h4 class="page__actions-title f24w600 leading-120 proxima">Массовые действия
-                                </h4>
-                                <p class="page__actions-descr f17w400 leading-120 proxima shuttle">Выделяй сразу
-                                    нескольких
-                                    кандидатов и&nbsp;применяй действия&nbsp;&mdash; быстрое удаление, тегирование,
-                                    отправка писем и&nbsp;прочее.</p>
-                            </div>
-                            <div class="page__storage">
-                                <h4 class="page__storage-title f24w600 leading-120 proxima">Хранение истории
-                                    откликов и действий
-                                </h4>
-                                <p class="page__storage-descr f17w400 leading-120 proxima shuttle">Вся
-                                    активность&nbsp;&mdash; под рукой: отклики, звонки, статусы
-                                    и&nbsp;действия&nbsp;HR сохраняются автоматически.</p>
-                            </div>
-                            <div class="page__research">
-                                <h4 class="page__research-title f24w600 leading-120 proxima">Аналитика и статистика
-                                </h4>
-                                <p class="page__research-descr f17w400 leading-120 proxima shuttle">Вся
-                                    активность&nbsp;&mdash; под рукой: отклики, звонки, статусы
-                                    и&nbsp;действия&nbsp;HR сохраняются автоматически.</p>
-                            </div>
+                        <div class="page__comments">
+                            <h4 class="page__comments-title f24w600 leading-120 proxima">Комментарии и метки
+                            </h4>
+                            <p class="page__comments-descr f17w400 leading-120 proxima shuttle">Оставляй
+                                заметки,
+                                добавляй теги
+                                и&nbsp;отслеживай
+                                статус
+                                каждого кандидата.</p>
+                        </div>
+                        <div class="page__actions">
+                            <h4 class="page__actions-title f24w600 leading-120 proxima">Массовые действия
+                            </h4>
+                            <p class="page__actions-descr f17w400 leading-120 proxima shuttle">Выделяй сразу
+                                нескольких
+                                кандидатов и&nbsp;применяй действия&nbsp;&mdash; быстрое удаление, тегирование,
+                                отправка писем и&nbsp;прочее.</p>
+                        </div>
+                        <div class="page__storage">
+                            <h4 class="page__storage-title f24w600 leading-120 proxima">Хранение истории
+                                откликов и действий
+                            </h4>
+                            <p class="page__storage-descr f17w400 leading-120 proxima shuttle">Вся
+                                активность&nbsp;&mdash; под рукой: отклики, звонки, статусы
+                                и&nbsp;действия&nbsp;HR сохраняются автоматически.</p>
+                        </div>
+                        <div class="page__research">
+                            <h4 class="page__research-title f24w600 leading-120 proxima">Аналитика и статистика
+                            </h4>
+                            <p class="page__research-descr f17w400 leading-120 proxima shuttle">Вся
+                                активность&nbsp;&mdash; под рукой: отклики, звонки, статусы
+                                и&nbsp;действия&nbsp;HR сохраняются автоматически.</p>
                         </div>
                     </div>
                     <div class="page__tools-bottom">
