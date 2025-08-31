@@ -101,6 +101,13 @@ img {
   border-radius: 1.2rem;
   padding: 1.8rem 4.8rem;
   line-height: normal;
+  background-image: linear-gradient(90deg, #0065ff 0%, #8a38f5 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease-out;
+}
+
+.btn-ribbon:hover {
+  background-position: 100% 0;
 }
 
 .btn-ribbon-small {
@@ -112,6 +119,13 @@ img {
   border-radius: 1rem;
   padding: 1.35rem 4.8rem;
   line-height: normal;
+  background-image: linear-gradient(90deg, #0065ff 0%, #8a38f5 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease-out;
+}
+
+.btn-ribbon-small:hover {
+  background-position: 100% 0;
 }
 
 .bg-fix {
