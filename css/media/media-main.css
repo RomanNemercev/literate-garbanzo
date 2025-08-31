@@ -96,6 +96,10 @@
       "e b";
   }
 
+  .page__tools-ai {
+    max-width: 100%;
+  }
+
   /* rates */
   .page__rates-personal {
     background-position: 115%;
@@ -152,5 +156,17 @@
   /* partners */
   .page__partners-item {
     padding: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* rates */
+  .page__rates-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* video */
+  .page__video-title {
+    font-size: 4rem;
   }
 }

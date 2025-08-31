@@ -6,11 +6,6 @@
   background-attachment: fixed;
 }
 
-.page__header {
-  background-color: var(--color_white);
-  box-shadow: 0px 55px 30px 10px #fff;
-}
-
 .page__quick-platforms {
   display: flex;
   margin-bottom: 25px;
@@ -423,6 +418,7 @@
 
 .page__comments {
   grid-area: b;
+  max-width: 402px;
 }
 
 .page__actions {

@@ -28,3 +28,106 @@
     margin-top: -20px;
   }
 }
+
+@media (max-width: 990px) {
+  /* header */
+  .page__header-wrapper {
+    padding: 21px 16px;
+    background-color: var(--color_aqua);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .page__header-wrapper.active {
+    background-color: var(--color_white);
+  }
+
+  .page__header-navigation,
+  .page__header-log {
+    display: none;
+  }
+
+  .page__header-mobile {
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    transition-property: max-height, padding;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .page__header-mobile.active {
+    border-top: 1px solid var(--color_aqua);
+    padding: 36px 36px;
+    max-height: 457px;
+  }
+
+  .page__header-burger {
+    position: relative;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color_ribbon);
+    border-radius: 2px;
+    margin-left: auto;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .page__header-burger::before,
+  .page__header-burger::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color_ribbon);
+    border-radius: 2px;
+    transition-property: transform, width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .page__header-burger::before {
+    top: -8px;
+  }
+
+  .page__header-burger::after {
+    top: 8px;
+  }
+
+  .page__header-burger.active {
+    background-color: transparent;
+  }
+
+  .page__header-burger.active::before {
+    transform: rotate(45deg) translate(3.5px, 8px);
+    width: 30px;
+  }
+
+  .page__header-burger.active::after {
+    transform: rotate(-45deg) translate(3.5px, -8px);
+    width: 30px;
+  }
+
+  .page__mobile-link.login,
+  .page__mobile-link.reg {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .page__mobile-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .page__mobile-item:nth-child(7) {
+    margin-bottom: 30px;
+  }
+
+  .page__mobile-item:nth-child(8) {
+    margin-bottom: 16px;
+  }
+}
