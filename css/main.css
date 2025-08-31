@@ -373,7 +373,6 @@
   max-width: 1416px;
   width: 100%;
   background-color: var(--color_white);
-  /* background-color: gray; */
   border-radius: 35px;
   margin: 0 auto;
   padding: 40px;
@@ -1375,7 +1374,7 @@
 /* faq */
 .page__faq {
   padding: 0 50px;
-  margin-bottom: 180px;
+  margin-bottom: 90px;
 }
 
 .page__faq-wrapper {
@@ -1464,4 +1463,67 @@
 
 .ac.is-active .ac-trigger {
   padding-bottom: 8px;
+}
+
+/* cta */
+.page__cta {
+  width: 100%;
+  background-color: var(--color_white);
+  padding: 90px 50px;
+}
+
+.page__cta-wrapper {
+  position: relative;
+  max-width: 1224px;
+  margin: 0 auto;
+  background: linear-gradient(144deg, #005fff 0%, rgba(150, 75, 250, 0.8) 100%);
+  border-radius: 35px;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.page__cta-title {
+  max-width: 564px;
+  margin-bottom: 42px;
+}
+
+.page__cta-pre {
+  margin-bottom: 20px;
+}
+
+.page__cta-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  background-image: url(../img/cta-decor.png);
+  right: 137px;
+  top: 0;
+  background-size: auto;
+}
+
+.page__cta-btns {
+  display: flex;
+  column-gap: 16px;
+}
+
+.page__cta-tel {
+  margin-bottom: 48px;
+}
+
+.page__tel-number {
+  font-size: 5.1rem;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.page__cta-network {
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 13.67px 35.99px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color_white);
 }
