@@ -498,6 +498,22 @@
   background-size: cover;
 }
 
+.page__research-title > span:nth-child(2) {
+  display: none;
+}
+
+.page__research-descr > span:nth-child(2) {
+  display: none;
+}
+
+.page__chat-title > span:nth-child(2) {
+  display: none;
+}
+
+.page__chat-descr > span:nth-child(2) {
+  display: none;
+}
+
 .page__tools-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -543,6 +559,7 @@
   background-size: cover;
   top: 0;
   left: 16px;
+  pointer-events: none;
 }
 
 .page__api::after {
@@ -555,6 +572,7 @@
   background-size: cover;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 
 .page__advantage-chat::before {

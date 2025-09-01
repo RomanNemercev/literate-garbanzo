@@ -545,6 +545,10 @@ img {
   column-gap: 5px;
 }
 
+.page__footer-a > .page__registry {
+  display: none;
+}
+
 .page__footer-b {
   grid-area: b;
   margin-top: -40px;
