@@ -92,6 +92,7 @@
 
 .page__descr-price {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .page__quick-decor {

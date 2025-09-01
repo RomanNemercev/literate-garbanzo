@@ -35,6 +35,14 @@
     padding: 21px 16px;
     background-color: var(--color_aqua);
     transition: background-color 0.3s ease-in-out;
+    padding-right: 31px;
+  }
+
+  .page__logo-link {
+    background-image: url("../../img/logo-black-768.svg");
+    width: 95px;
+    height: 30px;
+    background-repeat: no-repeat;
   }
 
   .page__header-wrapper.active {
