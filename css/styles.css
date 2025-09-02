@@ -214,6 +214,11 @@ img {
   font-weight: 600;
 }
 
+.f20w600 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .f22w600 {
   font-size: 2.2rem;
   font-weight: 600;
@@ -262,6 +267,11 @@ img {
 .f40w600 {
   font-size: 4rem;
   font-weight: 600;
+}
+
+.f40w700 {
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .f50w700 {

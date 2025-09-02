@@ -1,0 +1,172 @@
+.page__main {
+  font-family: "Proxima", sans-serif;
+}
+
+.page__header {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.page__header-wrapper {
+  padding: 1.2rem 1.6rem;
+}
+
+.page__main {
+  padding: 9rem 7.95rem;
+  background-color: var(--color_aqua);
+}
+
+.policy__wrapper {
+  padding: 40px;
+  border-radius: 35px;
+  background-color: var(--color_white);
+}
+
+.policy__wrapper-title {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.policy__general-title {
+  margin-bottom: 17px;
+}
+
+.policy__general {
+  margin-bottom: 39px;
+}
+
+.policy__personal-title {
+  margin-bottom: 17px;
+}
+
+.policy__general-content {
+  line-height: 122%;
+  margin-bottom: 37px;
+}
+
+.policy__principles-title {
+  margin-bottom: 17px;
+}
+
+.policy__principles-content > p:first-child {
+  margin-bottom: 24px;
+}
+
+.policy__principles-content > p:nth-child(3) {
+  margin-bottom: 4px;
+}
+
+.policy__principles {
+  margin-bottom: 36px;
+}
+
+.policy__rights-title {
+  margin-bottom: 17px;
+}
+
+.policy__rights-content > ul {
+  line-height: 122%;
+}
+
+.policy__rights-descr {
+  margin-bottom: 4px;
+}
+
+.policy__rights-content {
+  margin-bottom: 36px;
+}
+
+.policy__implementation-title {
+  margin-bottom: 18px;
+}
+
+.policy__implementation-content {
+  line-height: 122%;
+}
+
+@media (max-width: 768px) {
+  .page__header {
+    box-shadow: none;
+  }
+
+  .policy {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .policy__wrapper {
+    padding: 2.4rem;
+    border-radius: 24px;
+  }
+
+  .policy__wrapper-title {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 37px;
+  }
+
+  .policy__general-title,
+  .policy__personal-title,
+  .policy__principles-title,
+  .policy__rights-title,
+  .policy__implementation-title {
+    font-size: 1.8rem;
+  }
+
+  .policy__general-content {
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+  }
+
+  .policy__general__content,
+  .policy__principles-content,
+  .policy__rights-content,
+  .policy__implementation-content {
+    font-size: 1.4rem;
+  }
+
+  .policy__general-content > ul {
+    line-height: 121%;
+  }
+
+  .policy__general {
+    margin-bottom: 37px;
+  }
+
+  .policy__principles-content > p:first-child {
+    margin-bottom: 18px;
+  }
+
+  .policy__rights-descr {
+    margin-bottom: 0;
+  }
+
+  .policy__implementation-title {
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page__promo {
+    display: none;
+  }
+
+  .policy {
+    padding: 2.4rem 0.4rem;
+  }
+
+  .policy__wrapper {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .policy__general__content {
+    line-height: 121%;
+  }
+
+  .policy__principles,
+  .policy__rights-content {
+    margin-bottom: 40px;
+  }
+
+  .policy__implementation-content > p:nth-child(5) {
+    line-height: 120%;
+  }
+}
