@@ -1,18 +1,4 @@
 @media (max-width: 1200px) {
-  /* header */
-  .page__promo {
-    background-image: none;
-  }
-
-  .page__promo-content::before,
-  .page__promo-content::after {
-    display: none;
-  }
-
-  .page__promo-title {
-    font-size: 2rem;
-  }
-
   /* CTA */
   .page__cta-wrapper::after {
     right: 0;
@@ -251,5 +237,122 @@
 
   .page__systems {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  /* footer */
+  .page__footer-d {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  /* footer */
+  .page__footer-a > .page__registry {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* CTA */
+  .page__cta-wrapper {
+    padding: 2.4rem;
+  }
+
+  .page__cta-pre {
+    text-align: center;
+  }
+
+  .page__cta-title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 265px;
+  }
+
+  .page__cta-wrapper::after {
+    width: 241px;
+    height: 241px;
+    top: 201px;
+    right: 39px;
+  }
+
+  .page__cta-tel {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .page__cta-btns {
+    grid-template-columns: 1fr;
+    row-gap: 7px;
+  }
+
+  /* footer */
+  .page__footer {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .page__footer-title,
+  .page__footer-payment,
+  .page__footer-region,
+  .page__footer-statements,
+  .page__footer-sales,
+  .page__footer-products,
+  .page__footer-service,
+  .page__footer-docs {
+    text-align: center;
+  }
+
+  .page__footer-payment {
+    margin-bottom: 37px;
+  }
+
+  .page__footer-title {
+    margin-bottom: 35px;
+  }
+
+  .page__footer-a > .page__registry {
+    display: none;
+  }
+
+  .page__footer-b > .page__registry {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+  }
+
+  .page__footer-a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .page__footer-d {
+    padding-left: 0;
+  }
+
+  .page__footer-wrapper {
+    grid-template-areas:
+      "a"
+      "c"
+      "d"
+      "b";
+  }
+
+  .page__footer-statements {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+
+  .page__footer-region {
+    margin-bottom: 35px;
+  }
+
+  .page__footer-c {
+    margin-bottom: 25px;
+  }
+
+  .page__registry-content {
+    text-align: left;
   }
 }

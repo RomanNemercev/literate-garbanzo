@@ -96,10 +96,14 @@
 }
 
 .page__quick-decor {
+  position: absolute;
+  top: 30px;
+  right: -60px;
   width: 700px;
   height: 643px;
   background-image: url("../img/quick-decor.png");
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .page__quick-wrapper {
@@ -109,12 +113,6 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.page__quick-decor {
-  position: absolute;
-  top: 30px;
-  right: -60px;
 }
 
 .page__quick {
