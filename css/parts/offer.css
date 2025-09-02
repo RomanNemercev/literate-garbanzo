@@ -3,7 +3,8 @@
 }
 
 .page__header {
-  background: rgba(255, 255, 255, 0.2);
+  background-color: var(--color_aqua);
+  box-shadow: none;
 }
 
 .page__header-wrapper {
@@ -99,10 +100,6 @@
 }
 
 @media (max-width: 768px) {
-  .page__header {
-    box-shadow: none;
-  }
-
   .offer {
     padding: 2.4rem 1.6rem;
   }

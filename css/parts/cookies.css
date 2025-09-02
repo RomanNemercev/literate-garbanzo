@@ -16,23 +16,23 @@
   background-color: var(--color_aqua);
 }
 
-.rules__wrapper {
+.page__cookies-wrapper {
   padding: 40px;
   border-radius: 35px;
   background-color: var(--color_white);
 }
 
-.rules__wrapper-title {
+.cookies__wrapper-title {
   text-align: center;
   margin-bottom: 56px;
 }
 
-.rules__content {
-  margin-bottom: 36px;
+.page__module-title {
+  margin-bottom: 17px;
 }
 
-.rules__list-title {
-  margin-bottom: 19px;
+.page__content-module:not(:last-child) {
+  margin-bottom: 36px;
 }
 
 .mobile-break {
@@ -40,32 +40,33 @@
 }
 
 @media (max-width: 768px) {
-  .rules {
+  .cookies {
     padding: 2.4rem 1.6rem;
   }
 
-  .rules__wrapper {
+  .page__cookies-wrapper {
     padding: 2.4rem;
     border-radius: 24px;
   }
 
-  .rules__wrapper-title {
+  .cookies__wrapper-title {
     font-size: 24px;
     text-align: left;
     margin-bottom: 37px;
   }
 
-  .rules__content,
-  .rules__list {
-    font-size: 1.4rem;
-    line-height: 17px;
-  }
-
-  .rules__list-title {
+  .page__module-title {
     font-size: 1.8rem;
   }
 
-  .rules__list-title {
+  .page__module-text {
+    font-size: 1.4rem;
+  }
+
+  .page__cookies-content
+    > .page__content-module:nth-child(3)
+    > .page__module-title {
+    font-size: 2rem;
     margin-bottom: 15px;
   }
 }
@@ -75,15 +76,33 @@
     display: none;
   }
 
-  .rules {
+  .cookies {
     padding: 2.4rem 0.4rem;
   }
 
-  .rules__wrapper {
+  .page__cookies-wrapper {
     padding: 2.4rem 1.6rem;
+  }
+
+  .page__cookies-content
+    > .page__content-module:nth-child(3)
+    > .page__module-title {
+    margin-bottom: 17px;
+  }
+
+  .page__cookies-content
+    > .page__content-module:nth-child(4)
+    > .page__module-text {
+    line-height: 17px;
   }
 
   .mobile-break {
     display: inline;
+  }
+
+  .page__cookies-content
+    > .page__content-module:last-child
+    > .page__module-text {
+    line-height: 17px;
   }
 }
