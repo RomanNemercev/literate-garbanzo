@@ -1,0 +1,162 @@
+.page__main {
+  font-family: "Proxima", sans-serif;
+}
+
+.page__header {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.page__header-wrapper {
+  padding: 1.2rem 1.6rem;
+}
+
+.page__main {
+  padding: 9rem 7.95rem;
+  background-color: var(--color_aqua);
+}
+
+.posting__wrapper {
+  padding: 40px;
+  border-radius: 35px;
+  background-color: var(--color_white);
+}
+
+.posting__wrapper-title {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.posting__wrapper-descr {
+  margin-bottom: 38px;
+}
+
+.posting__accepts,
+.posting__employer {
+  margin-bottom: 36px;
+}
+
+.posting__general-title,
+.posting__employer-title,
+.posting__prohibited-title,
+.posting__force-title {
+  margin-bottom: 17px;
+}
+
+.posting__general {
+  margin-bottom: 36px;
+}
+
+.posting__prohibited,
+.posting__requirements {
+  margin-bottom: 35px;
+}
+
+.posting__reqirements-title {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  .page__header {
+    box-shadow: none;
+  }
+
+  .posting {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .posting__wrapper {
+    padding: 2.4rem;
+    border-radius: 24px;
+  }
+
+  .posting__wrapper-title {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 37px;
+  }
+
+  .posting__wrapper-descr {
+    font-size: 1.4rem;
+  }
+
+  .posting__accepts,
+  .posting__general-title,
+  .posting__employer-title,
+  .posting__prohibited-title,
+  .posting__reqirements-title,
+  .posting__force-title {
+    font-size: 1.8rem;
+  }
+
+  .posting__general-content,
+  .posting__employer-content,
+  .posting__prohibited-content,
+  .posting__force-content,
+  .posting__requirements-content {
+    font-size: 1.4rem;
+  }
+
+  .posting__general-title,
+  .posting__employer-title {
+    margin-bottom: 14px;
+  }
+
+  .posting__employer {
+    margin-bottom: 35px;
+  }
+
+  .posting__reqirements-title {
+    margin-bottom: 16px;
+  }
+
+  .posting__requirements-content {
+    margin-bottom: 36px;
+  }
+
+  .posting__force-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page__promo {
+    display: none;
+  }
+
+  .posting {
+    padding: 2.4rem 0.4rem;
+  }
+
+  .posting__wrapper {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .posting__wrapper-descr {
+    line-height: 121%;
+  }
+
+  .posting__general-content,
+  .posting__employer-content {
+    line-height: 17.04px;
+  }
+
+  .posting__prohibited-title {
+    margin-bottom: 15px;
+  }
+
+  .posting__prohibited {
+    margin-bottom: 37px;
+  }
+
+  .posting__requirements-content {
+    line-height: 17px;
+  }
+
+  .posting__force-title {
+    margin-bottom: 17px;
+  }
+
+  .posting__force-content {
+    line-height: 17px;
+  }
+}

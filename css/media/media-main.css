@@ -1009,8 +1009,9 @@
     background-image: url("../../img/quick-decor-320.png");
     width: 320px;
     height: 324px;
-    right: 0;
-    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0px;
   }
 
   .page__quick-wrapper {
