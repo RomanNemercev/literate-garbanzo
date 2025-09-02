@@ -1,0 +1,244 @@
+.page__main {
+  font-family: "Proxima", sans-serif;
+}
+
+.page__header {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.page__header-wrapper {
+  padding: 1.2rem 1.6rem;
+}
+
+.page__main {
+  padding: 9rem 7.95rem;
+  background-color: var(--color_aqua);
+}
+
+.offer__wrapper {
+  padding: 40px;
+  border-radius: 35px;
+  background-color: var(--color_white);
+}
+
+.offer__wrapper-title {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.offer__wrapper-descr,
+.offer__rights,
+.offer__parties,
+.offer__others {
+  margin-bottom: 37px;
+}
+
+.offer__terms-title,
+.offer__subject-title,
+.offer__remuneration-title,
+.offer__limits-title,
+.offer__rights-title,
+.offer__responsibilities-title,
+.offer__parties-title,
+.offer__majeure-title,
+.offer__conclusion-title,
+.offer__others-title,
+.offer__details-title {
+  margin-bottom: 17px;
+}
+
+.offer__terms-content,
+.offer__subject-content,
+.offer__remuneration-wrapper,
+.offer__using-wrapper,
+.offer__limits-wrapper,
+.offer__rights-wrapper,
+.offer__responsibilities-wrapper,
+.offer__parties-wrapper,
+.offer__conclusion-wrapper,
+.offer__others-wrapper,
+.offer__details-wrapper {
+  line-height: 122%;
+}
+
+.offer__terms-content {
+  margin-bottom: 58px;
+}
+
+.offer__subject-content > p:nth-child(2) {
+  text-indent: 19px;
+}
+
+.offer__subject-content > p:nth-child(3) {
+  text-indent: 19px;
+}
+
+.offer__subject-content > p:nth-child(4) {
+  text-indent: 19px;
+}
+
+.offer__subject-content,
+.offer__using-wrapper,
+.offer__limits {
+  margin-bottom: 35px;
+}
+
+.offer__remuneration,
+.offer__responsibilities,
+.offer__majeure,
+.offer__conclusion {
+  margin-bottom: 36px;
+}
+
+.offer__using-title {
+  margin-bottom: 18px;
+}
+
+.offer__rights-wrapper > ul > li:nth-child(4) > p:last-child {
+  text-indent: 18px;
+}
+
+@media (max-width: 768px) {
+  .page__header {
+    box-shadow: none;
+  }
+
+  .offer {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .offer__wrapper {
+    padding: 2.4rem;
+    border-radius: 24px;
+  }
+
+  .offer__wrapper-title {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 37px;
+  }
+
+  .offer__wrapper-descr {
+    font-size: 1.4rem;
+  }
+
+  .offer__terms-title,
+  .offer__subject-title,
+  .offer__remuneration-title,
+  .offer__using-title,
+  .offer__limits-title,
+  .offer__rights-title,
+  .offer__responsibilities-title,
+  .offer__parties-title,
+  .offer__majeure-title,
+  .offer__conclusion-title,
+  .offer__others-title,
+  .offer__details-title {
+    font-size: 1.8rem;
+  }
+
+  .offer__terms-content,
+  .offer__subject-content,
+  .offer__remuneration-wrapper,
+  .offer__using-wrapper,
+  .offer__limits-wrapper,
+  .offer__rights-wrapper,
+  .offer__responsibilities-wrapper,
+  .offer__parties-wrapper,
+  .offer__majeure-wrapper,
+  .offer__conclusion-wrapper,
+  .offer__others-wrapper,
+  .offer__details-wrapper {
+    font-size: 1.4rem;
+  }
+
+  .offer__wrapper-descr,
+  .offer__using-wrapper {
+    margin-bottom: 36px;
+  }
+
+  .offer__subject-content,
+  .offer__limits,
+  .offer__majeure {
+    margin-bottom: 37px;
+  }
+
+  .offer__terms-content,
+  .offer__subject-content,
+  .offer__remuneration-wrapper,
+  .offer__using-wrapper,
+  .offer__limits-wrapper,
+  .offer__rights-wrapper,
+  .offer__conclusion-wrapper,
+  .offer__others-wrapper,
+  .offer__majeure-wrapper {
+    line-height: 17px;
+  }
+
+  .offer__subject-title,
+  .offer__using-title,
+  .offer__limits-title,
+  .offer__responsibilities-title,
+  .offer__parties-title,
+  .offer__majeure-title {
+    margin-bottom: 14px;
+  }
+
+  .offer__terms-content {
+    margin-bottom: 52px;
+  }
+
+  .offer__subject-content > p:nth-child(2),
+  .offer__subject-content > p:nth-child(3),
+  .offer__subject-content > p:nth-child(3) {
+    text-indent: 14px;
+  }
+
+  .offer__rights-title {
+    margin-bottom: 16px;
+  }
+
+  .break-custom {
+    display: none;
+  }
+
+  .offer__others-title,
+  .offer__details-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page__promo {
+    display: none;
+  }
+
+  .offer {
+    padding: 2.4rem 0.4rem;
+  }
+
+  .offer__wrapper {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .offer__rights-wrapper > ul > li:nth-child(4) > p:last-child {
+    text-indent: 14px;
+  }
+
+  .offer__responsibilities-wrapper,
+  .offer__parties-wrapper {
+    line-height: 17px;
+  }
+
+  .offer__responsibilities {
+    margin-bottom: 39px;
+  }
+
+  .offer__majeure-title {
+    margin-bottom: 16px;
+  }
+
+  .offer__details-title {
+    margin-bottom: 16px;
+  }
+}
