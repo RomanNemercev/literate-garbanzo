@@ -42,3 +42,27 @@ var swiper = new Swiper(".page__slider-wrapper", {
 
 // accordion
 new Accordion(".accordion-container");
+
+// scroll-up btn
+var goTopBtn = document.querySelector(".page__scroll");
+
+window.addEventListener("scroll", trackScroll);
+goTopBtn.addEventListener("click", scrollToTop);
+
+function trackScroll() {
+  const scrolled = window.pageYOffset;
+  const coords = document.documentElement.clientHeight;
+
+  if (scrolled > coords) {
+    goTopBtn.classList.add("show");
+  } else {
+    goTopBtn.classList.remove("show");
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}

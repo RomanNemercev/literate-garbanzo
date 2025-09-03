@@ -5,6 +5,10 @@
 .page__header {
   background-color: var(--color_aqua);
   box-shadow: none;
+      position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .page__header-wrapper {

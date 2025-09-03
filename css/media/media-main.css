@@ -21,7 +21,8 @@
     background-size: contain;
     top: auto;
     bottom: -80px;
-    right: calc(100% - 90vw);
+    right: 50%;
+    transform: translateX(57.3%);
     background-image: url("../../img/quick-decor-768.png");
   }
 
@@ -197,7 +198,6 @@
   .page__quick-decor {
     background-size: auto;
     bottom: -84px;
-    right: calc(100% - 785px);
   }
 
   /* video */
@@ -913,7 +913,6 @@
   /* quick */
   .page__quick-decor {
     width: 580px;
-    right: calc(100% - 640px);
     background-size: contain;
     bottom: -140px;
   }
@@ -1022,6 +1021,11 @@
   .page__video-title {
     line-height: 130%;
     top: 23px;
+  }
+
+  .video-modal video {
+    max-width: 90vw;
+    max-height: 90vh;
   }
 
   .video-promo {

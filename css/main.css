@@ -120,7 +120,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .page__quick-content {
@@ -150,7 +150,8 @@
 /* video */
 .page__video {
   position: relative;
-  background-image: url("../img/presentation.gif");
+  /* background-image: url("../img/presentation.gif"); */
+  background-image: url("../img/presentation.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
