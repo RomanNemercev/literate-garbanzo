@@ -274,7 +274,8 @@
     width: 241px;
     height: 241px;
     top: 201px;
-    right: 39px;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .page__cta-tel {

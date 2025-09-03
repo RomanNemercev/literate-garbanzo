@@ -735,7 +735,8 @@
   height: 22px;
   background-image: url("../img/youla-22.svg");
   top: 7px;
-  left: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .page__include-item.superjob {

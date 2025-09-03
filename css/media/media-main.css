@@ -510,7 +510,7 @@
   }
 
   .page__include-item.youla::after {
-    left: -3px;
+    left: 50%;
   }
 
   .page__update {
