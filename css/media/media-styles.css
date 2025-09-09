@@ -2,11 +2,12 @@
   /* CTA */
   .page__cta-wrapper::after {
     right: 0;
-    width: 330px;
-    height: 330px;
+    background-image: url("../../img/cta-decor-768.png");
     background-size: contain;
     background-repeat: no-repeat;
-    top: 35px;
+    width: 296px;
+    height: 307px;
+    top: -15px;
   }
 
   /* footer */
@@ -158,12 +159,6 @@
 
   .page__cta-tel {
     margin-bottom: 52px;
-  }
-
-  .page__cta-wrapper::after {
-    width: 283px;
-    top: 6px;
-    right: -7px;
   }
 
   /* footer */

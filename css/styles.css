@@ -137,13 +137,13 @@ img {
   color: var(--color_shuttle);
   position: fixed;
   bottom: -60px;
-  right: 60px;
+  right: 30px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     box-shadow 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
 
 .page__scroll.show {
-  bottom: 60px;
+  bottom: 30px;
 }
 
 .page__scroll:hover {

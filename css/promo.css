@@ -4,6 +4,7 @@
   background-image: url("../img/percents.png");
   background-color: var(--color_violet);
   overflow: hidden;
+  background-repeat: repeat;
 }
 
 .page__promo-content {

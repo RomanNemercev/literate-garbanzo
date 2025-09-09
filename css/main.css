@@ -95,15 +95,16 @@
   text-underline-offset: 3px;
 }
 
-.page__quick-decor {
+.page__decor-picture {
   position: absolute;
-  top: 30px;
-  right: -60px;
-  width: 700px;
-  height: 643px;
-  background-image: url("../img/quick-decor.png");
-  background-repeat: no-repeat;
-  pointer-events: none;
+  right: -171px;
+  top: 29px;
+}
+
+.page__decor-img {
+  width: 812px;
+  height: 651px;
+  object-fit: cover;
 }
 
 .page__quick-wrapper {
@@ -464,7 +465,7 @@
 .page__actions::before {
   content: "";
   position: absolute;
-  width: 96px;
+  width: 105px;
   height: 96px;
   top: 28px;
   left: 30px;
@@ -801,10 +802,11 @@
 
 .page__more-decor {
   flex-shrink: 0;
-  width: 32px;
+  width: 33px;
   height: 32px;
   background-image: url("../img/user-icon.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .page__more-descr {
@@ -935,7 +937,7 @@
   border-radius: 35px;
   padding: 48px;
   background-image: url("../img/calc.png");
-  background-size: contain;
+  background-size: 523px 285px;
   background-position: 98%;
 }
 
