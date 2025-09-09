@@ -93,6 +93,7 @@
   /* tools */
   .page__tools-ai::after {
     background-image: url("../../img/ai-bot-768.png");
+    background-size: cover;
   }
 
   .page__tools-top {
@@ -321,14 +322,13 @@
   .page__tools-ai::after {
     right: 0;
     width: 348px;
-    background-size: auto;
     height: 555px;
   }
 
   .page__storage::before {
     background-image: url("../../img/storage-768.png");
-    width: 110px;
-    background-size: auto;
+    width: 106px;
+    background-size: contain;
     left: 35.5%;
     top: 12px;
   }
@@ -362,26 +362,26 @@
 
   .page__actions::before {
     background-image: url("../../img/actions-768.png");
-    width: 120px;
-    height: 110px;
+    width: 95px;
+    height: 95px;
     left: 38.5%;
-    background-size: auto;
+    background-size: contain;
     top: 15px;
   }
 
   .page__comments::before {
     background-image: url("../../img/comments-768.png");
-    width: 120px;
-    height: 110px;
+    width: 104px;
+    height: 104px;
     left: 36.1%;
-    background-size: auto;
+    background-size: contain;
     top: 15px;
   }
 
   .page__research::before {
     background-image: url("../../img/hands-768.png");
-    background-size: auto;
-    width: 120px;
+    background-size: contain;
+    width: 110px;
     height: 110px;
     left: 35%;
     top: 6px;
@@ -420,10 +420,10 @@
   }
 
   .page__advantage-chat::before {
-    background-image: url(../../img/research-768.png);
-    background-size: auto;
-    width: 100px;
-    height: 100px;
+    background-image: url("../../img/research-768.png");
+    background-size: contain;
+    width: 96px;
+    height: 96px;
     left: 39%;
     top: 13px;
   }
@@ -443,9 +443,9 @@
 
   .page__advantage-search::before {
     background-image: url("../../img/search-768.png");
-    background-size: auto;
-    width: 100px;
-    height: 100px;
+    background-size: contain;
+    width: 95px;
+    height: 95px;
     left: 39%;
     top: 15px;
   }
@@ -1132,6 +1132,7 @@
     background-image: url("../../img/research-768.png");
     left: 36.4%;
     top: 14px;
+    width: 95px;
   }
 
   .page__actions::before {
@@ -1177,6 +1178,8 @@
   .page__advantage-chat::before {
     left: 32%;
     top: 5px;
+    width: 107px;
+    height: 107px;
   }
 
   /* rates */
