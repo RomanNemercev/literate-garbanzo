@@ -66,3 +66,129 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
+
+// calculate prices on sale
+// Получаем элементы таблиц
+const tableMin = document.getElementById("table-min");
+const tableMid = document.getElementById("table-mid");
+const tableMax = document.getElementById("table-max");
+
+// Получаем элементы с классом page__btn-sale в каждой таблице
+const minButtons = tableMin.querySelectorAll(".page__btn-sale");
+const midButtons = tableMid.querySelectorAll(".page__btn-sale");
+const maxButtons = tableMax.querySelectorAll(".page__btn-sale");
+
+// Получаем элементы с классом page__price-item в каждом блоке
+const minPrice = document.querySelector(".page__min-total .page__price-item");
+const midPrice = document.querySelector(".page__mid-total .page__price-item");
+const maxPrice = document.querySelector(".page__max-total .page__price-item");
+
+// Объявляю множители
+let minMultiplier = 1;
+let midMultiplier = 1;
+let maxMultiplier = 1;
+
+// Добавляем обработчики кликов для множителей
+minButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    // Извлекаем текст цены
+    const priceText = button.querySelector(".page__item-price").textContent;
+
+    // Используем регулярное выражение для извлечения чисел
+    const priceMatch = priceText.match(/[\d\s]+/);
+    const priceNumber = priceMatch
+      ? parseFloat(priceMatch[0].replace(/\s/g, ""))
+      : 0; // Убираем пробелы и преобразуем в число
+
+    minPrice.textContent = priceText;
+
+    // Извлекаем текст множителя
+    const quantText = button.querySelector(".page__item-quant").textContent;
+    const quantNumber = parseInt(quantText, 10); // Извлекаем число из строки
+    minMultiplier = quantNumber; // Присваиваем числовое значение
+
+    // Выводим число в консоль
+    console.log(minMultiplier);
+
+    // Выводим произведение minMultiplier и minPrice в консоль
+    const result = minMultiplier * priceNumber;
+    console.log("Произведение minMultiplier и minPrice:", result);
+  });
+});
+
+midButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const priceText = button.querySelector(".page__item-price").textContent;
+
+    // Используем регулярное выражение для извлечения чисел
+    const priceMatch = priceText.match(/[\d\s]+/);
+    const priceNumber = priceMatch
+      ? parseFloat(priceMatch[0].replace(/\s/g, ""))
+      : 0; // Убираем пробелы и преобразуем в число
+
+    midPrice.textContent = priceText;
+
+    // Извлекаем текст множителя
+    const quantText = button.querySelector(".page__item-quant").textContent;
+    const quantNumber = parseInt(quantText, 10); // Извлекаем число из строки
+    midMultiplier = quantNumber; // Присваиваем числовое значение
+
+    // Выводим число в консоль
+    console.log(midMultiplier);
+
+    // Выводим произведение minMultiplier и minPrice в консоль
+    const result = midMultiplier * priceNumber;
+    console.log("Произведение midMultiplier и midPrice:", result);
+  });
+});
+
+maxButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const priceText = button.querySelector(".page__item-price").textContent;
+
+    // Используем регулярное выражение для извлечения чисел
+    const priceMatch = priceText.match(/[\d\s]+/);
+    const priceNumber = priceMatch
+      ? parseFloat(priceMatch[0].replace(/\s/g, ""))
+      : 0; // Убираем пробелы и преобразуем в число
+
+    maxPrice.textContent = priceText;
+
+    // Извлекаем текст множителя
+    const quantText = button.querySelector(".page__item-quant").textContent;
+    const quantNumber = parseInt(quantText, 10); // Извлекаем число из строки
+    maxMultiplier = quantNumber; // Присваиваем числовое значение
+
+    // Выводим число в консоль
+    console.log(maxMultiplier);
+
+    // Выводим произведение minMultiplier и minPrice в консоль
+    const result = maxMultiplier * priceNumber;
+    console.log("Произведение maxMultiplier и maxPrice:", result);
+  });
+});
+
+// Получаем кнопки с классом page__total-accept
+const minAcceptButton = document.querySelector(
+  ".page__min-total .page__total-accept"
+);
+const midAcceptButton = document.querySelector(
+  ".page__mid-total .page__total-accept"
+);
+const maxAcceptButton = document.querySelector(
+  ".page__max-total .page__total-accept"
+);
+
+// Добавляем обработчики кликов для кнопок
+minAcceptButton.addEventListener("click", () => {
+  // Умножаем значения множителей на значения по умолчанию
+  console.log("Минимальный тариф:", minPrice.textContent);
+});
+
+midAcceptButton.addEventListener("click", () => {
+  console.log("Средний тариф:", midPrice.textContent);
+});
+
+maxAcceptButton.addEventListener("click", () => {
+  console.log("Максимальный тариф:", maxPrice.textContent);
+});
