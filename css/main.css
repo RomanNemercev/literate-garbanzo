@@ -891,6 +891,11 @@
   text-align: center;
   width: 100%;
   display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+.page__total-more:hover {
+  color: var(--color_ribbon);
 }
 
 .page__table-header {

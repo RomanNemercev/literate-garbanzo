@@ -83,6 +83,17 @@ const minPrice = document.querySelector(".page__min-total .page__price-item");
 const midPrice = document.querySelector(".page__mid-total .page__price-item");
 const maxPrice = document.querySelector(".page__max-total .page__price-item");
 
+// Получаем итоговое значение количества вакансий
+const minTotalQuant = document.querySelector(
+  ".page__min-total .page__total-quant"
+);
+const midTotalQuant = document.querySelector(
+  ".page__mid-total .page__total-quant"
+);
+const maxTotalQuant = document.querySelector(
+  ".page__max-total .page__total-quant"
+);
+
 // Объявляю множители
 let minMultiplier = 1;
 let midMultiplier = 1;
@@ -100,8 +111,6 @@ minButtons.forEach((button, index) => {
       ? parseFloat(priceMatch[0].replace(/\s/g, ""))
       : 0; // Убираем пробелы и преобразуем в число
 
-    minPrice.textContent = priceText;
-
     // Извлекаем текст множителя
     const quantText = button.querySelector(".page__item-quant").textContent;
     const quantNumber = parseInt(quantText, 10); // Извлекаем число из строки
@@ -110,8 +119,17 @@ minButtons.forEach((button, index) => {
     // Выводим число в консоль
     console.log(minMultiplier);
 
+    if (minMultiplier === 1) {
+      minTotalQuant.textContent = minMultiplier + " вакансия =";
+    } else if ([2, 3, 4].includes(minMultiplier)) {
+      minTotalQuant.textContent = minMultiplier + " вакансии =";
+    } else {
+      minTotalQuant.textContent = minMultiplier + " вакансий =";
+    }
+
     // Выводим произведение minMultiplier и minPrice в консоль
     const result = minMultiplier * priceNumber;
+    minPrice.textContent = result;
     console.log("Произведение minMultiplier и minPrice:", result);
   });
 });
@@ -126,8 +144,6 @@ midButtons.forEach((button, index) => {
       ? parseFloat(priceMatch[0].replace(/\s/g, ""))
       : 0; // Убираем пробелы и преобразуем в число
 
-    midPrice.textContent = priceText;
-
     // Извлекаем текст множителя
     const quantText = button.querySelector(".page__item-quant").textContent;
     const quantNumber = parseInt(quantText, 10); // Извлекаем число из строки
@@ -136,8 +152,17 @@ midButtons.forEach((button, index) => {
     // Выводим число в консоль
     console.log(midMultiplier);
 
+    if (midMultiplier === 1) {
+      midTotalQuant.textContent = midMultiplier + " вакансия =";
+    } else if ([2, 3, 4].includes(midMultiplier)) {
+      midTotalQuant.textContent = midMultiplier + " вакансии =";
+    } else {
+      midTotalQuant.textContent = midMultiplier + " вакансий =";
+    }
+
     // Выводим произведение minMultiplier и minPrice в консоль
     const result = midMultiplier * priceNumber;
+    midPrice.textContent = result;
     console.log("Произведение midMultiplier и midPrice:", result);
   });
 });
@@ -152,8 +177,6 @@ maxButtons.forEach((button, index) => {
       ? parseFloat(priceMatch[0].replace(/\s/g, ""))
       : 0; // Убираем пробелы и преобразуем в число
 
-    maxPrice.textContent = priceText;
-
     // Извлекаем текст множителя
     const quantText = button.querySelector(".page__item-quant").textContent;
     const quantNumber = parseInt(quantText, 10); // Извлекаем число из строки
@@ -162,8 +185,17 @@ maxButtons.forEach((button, index) => {
     // Выводим число в консоль
     console.log(maxMultiplier);
 
+    if (maxMultiplier === 1) {
+      maxTotalQuant.textContent = maxMultiplier + " вакансия =";
+    } else if ([2, 3, 4].includes(maxMultiplier)) {
+      maxTotalQuant.textContent = maxMultiplier + " вакансии =";
+    } else {
+      maxTotalQuant.textContent = maxMultiplier + " вакансий =";
+    }
+
     // Выводим произведение minMultiplier и minPrice в консоль
     const result = maxMultiplier * priceNumber;
+    maxPrice.textContent = result;
     console.log("Произведение maxMultiplier и maxPrice:", result);
   });
 });
